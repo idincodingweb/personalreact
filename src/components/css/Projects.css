@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #00c6ff;
+  --secondary-color: #0072ff;
+  --accent-color: #ff7f50;
+  --accent-hover-color: #ff4500;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --text-light-color: #ffffff;
+  --card-bg : #ffffff1f ;
+}
+
+.projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--text-light-color);
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-light-color);
+}
+
+.project-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--text-light-color);
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--text-light-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+  background-color: var(--accent-hover-color);
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

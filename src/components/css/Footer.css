@@ -1,0 +1,10 @@
+.footer {
+  /* Menggunakan position: relative */
+  position: relative;
+  /* Atau menggunakan position: static */
+  /* position: static; */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}

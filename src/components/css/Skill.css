@@ -1,0 +1,40 @@
+/* css/Skill.css */
+.skills {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.idin-skill{
+  background: #ffffff1f;
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 1rem;
+  background-color: #ffffff1a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.skills li h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.skills li p {
+  margin: 0.5rem 0 0;
+  color: white;
+}

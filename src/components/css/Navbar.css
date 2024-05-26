@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #00c6ff;
+  --secondary-color: #0072ff;
+  --accent-color: #ff7f50;
+  --accent-hover-color: #ff4500;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --text-light-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-links li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+.navbar-custom {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  position: relative;
+}
+
+.navbar-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.navbar-custom .text-white {
+  color: var(--text-light-color) !important;
+}

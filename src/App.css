@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #00c6ff;
+  --secondary-color: #0072ff;
+  --accent-color: #ff7f50;
+  --accent-hover-color: #ff4500;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --text-light-color: #ffffff;
+}
+
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  background: var(--primary-color);
+  color: var(--text-light-color);
+  padding: 20px 0;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar a {
+  color: var(--text-light-color);
+  margin-left: 15px;
+}
+
+header .navbar a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: var(--text-light-color);
+  padding: 100px 0;
+  text-align: left;
+}
+
+.hero .text-content {
+  margin-bottom: 30px;
+}
+
+.hero .text-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .text-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero .text-content .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+.hero .text-content .btn-primary:hover {
+  background-color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
+}
+
+.hero .image-container {
+  text-align: center;
+}
+
+.hero .airplane {
+  max-width: 100%;
+  animation: fly 3s ease-in-out infinite alternate;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .hero .text-content {
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  background: var(--primary-color);
+  color: var(--text-light-color);
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
